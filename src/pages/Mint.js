@@ -456,7 +456,7 @@ function Mint() {
       setWalletConnected(true);
     } else {
       window.open(
-        `https://metamask.app.link/dapp/polarpenguinsnft.com/${pagelocation}`
+        `https://metamask.app.link/dapp/polarpenguinsnft.com${pagelocation}`
       );
     }
   };
@@ -536,7 +536,7 @@ function Mint() {
           });
       } else {
         window.open(
-          `https://metamask.app.link/dapp/polarpenguinsnft.com/${pagelocation}`
+          `https://metamask.app.link/dapp/polarpenguinsnft.com${pagelocation}`
         );
       }
     } else {
