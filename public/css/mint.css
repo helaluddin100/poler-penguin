@@ -1,0 +1,194 @@
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #3bb9ff;
+    font-size: 30px;
+}
+
+.mint-container {
+    width: 80%;
+    margin: auto;
+    padding: 300px 0;
+}
+
+.mint-container h1 {
+    font-family: var(--parimary-font);
+    color: #3bb9ff;
+    font-size: 80px;
+    -webkit-text-stroke: 1px #3bb9ff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.mint-box {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    border: 5px solid #3bb9ff;
+    border-radius: 20px;
+    background: #3bbaff2f;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 10px 10px;
+    border: 2px solid #3bb9ff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.price-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.mint-box .price .price-amount p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #3bb9ff;
+    font-family: var(--secondary-font);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border: 2px solid #3bb9ff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .count h2 {
+    margin: 0 5px;
+}
+
+.box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.box button:hover {
+    transform: scale(1.05);
+}
+
+.underline {
+    width: 100%;
+    height: 4px;
+    background: #3bb9ff;
+    margin: 10px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.mint-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.mint-btn button {
+    font-family: "Montserrat", sans-serif;
+    background: #3bb9ff;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.mint-btn button:hover {
+    transform: scale(1.1);
+}
+
+.minted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #3bb9ff;
+    border-radius: 20px;
+    background: #3bbaff94;
+}
+
+.minted p {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (max-width: 888px) {
+    .mint-container {
+        width: 100%;
+        padding: 100px 0 200px 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    h2 {
+        font-size: 15px;
+    }
+    .mint-container h1 {
+        font-size: 40px;
+    }
+    .price-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .price-amount p {
+        font-size: 15px;
+    }
+    .mint-btn button img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .minted p {
+        font-size: 16px;
+    }
+    .mint-btn button {
+        font-size: 18px;
+    }
+    .mint-box {
+        padding: 10px;
+    }
+    .price {
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 20px;
+    }
+    .box {
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+    .total {
+        padding: 10px 10px;
+    }
+    .minted {
+        padding: 10px;
+    }
+}

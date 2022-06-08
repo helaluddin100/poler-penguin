@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+}
+
+::selection {
+  background: $primary-color;
+  color: $primary-text-color;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-text-color;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+img {
+  user-select: none;
+}

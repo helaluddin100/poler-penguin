@@ -1,0 +1,57 @@
+// Footer
+footer {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .social-links {
+      display: flex;
+
+      .social-link {
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        a {
+          display: flex;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-img-1 {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+
+    @media only screen and (max-width: 1550px) {
+      width: 400px;
+    }
+
+    @media only screen and (max-width: 1180px) {
+      right: 0%;
+    }
+
+    @media only screen and (max-width: 1120px) {
+      width: 300px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+}

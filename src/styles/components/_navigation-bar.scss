@@ -1,0 +1,119 @@
+// Navigation Bar
+nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 100px;
+      }
+    }
+
+    .navigation-bar-elements {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media only screen and (max-width: 1120px) {
+        display: none;
+      }
+
+      .navigation-bar-elements-left {
+        display: flex;
+
+        ul {
+          display: flex;
+
+          li {
+            margin-right: 40px;
+
+            &:last-child {
+              margin-right: 0px;
+            }
+
+            a {
+              font-size: 16px;
+              font-weight: 600;
+              text-transform: uppercase;
+              color: #b0ecff;
+              opacity: 0.5;
+              transition: all 0.3s ease;
+
+              &:hover {
+                color: $primary-color;
+                opacity: 1;
+              }
+            }
+
+            &.active a {
+              color: $primary-color;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .navigation-bar-elements-right {
+        display: flex;
+        align-items: center;
+
+        .social-links {
+          display: flex;
+          margin-right: 30px;
+
+          .social-link {
+            margin-right: 8px;
+
+            &:last-child {
+              margin-right: 0px;
+            }
+
+            a {
+              display: flex;
+              transition: all 0.3s ease;
+
+              &:hover {
+                transform: translateY(-5px);
+              }
+            }
+          }
+        }
+
+        button {
+          width: 250px;
+          height: 65px;
+          border: 2px solid $primary-color;
+          background: transparent;
+          border-radius: 100px;
+          font-size: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: $primary-color;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: $primary-color;
+            color: $primary-text-color;
+          }
+        }
+      }
+    }
+  }
+}
