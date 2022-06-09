@@ -502,7 +502,7 @@ function Mint() {
         const web3 = new Web3(Web3.givenProvider);
         await Web3.givenProvider.enable();
 
-        const price = 0 * value;
+        const price = 0.05 * value;
         var tokens = web3.utils.toWei(price.toString(), "ether");
         var bntokens = web3.utils.toBN(tokens);
 
